@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Geom:ital,wght@0,300..900;1,300..900&display=swap');
+
+.geom-tipo {
+  font-family: "Geom", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+.container{
+  font-size:2em;
+  font-family: "Geom", sans-serif;
+  width:100vw;
+  height:100vh;
+  display:grid;
+  grid-template:repeat(3,1fr) 1fr 1fr 1fr / repeat(3,1fr);
+  background:grey;
+}
+#dj1{
+  background:#fff450;
+  grid-area:1/1/2/3;
+   align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.groc_bg{
+  background-color: #fff450;
+  grid-area: 1/3/2/4;
+}
+#dj2{
+  background:#6ab670;
+  grid-area:2/1/3/3;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+#dj3{
+  background:#b328c1;
+  grid-area:3/1/4/3;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+#festival{
+  background:#6ab670;
+  grid-area:6/1/7/2;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+#data{
+  background:blue;
+  grid-area:6/2/7/3;
+  background-image: url(img/rosa.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#data p{
+  width: 100%;
+}
+#data p:nth-child(2) {
+  text-align: right;
+}
+.morada{
+  background-color: #b328c1;
+  grid-area: 4/2/5/4;
+}
+.verd_bg{
+  background:#6ab670;
+  grid-area: 5/1/6/3;
+}
+.blau_bg{
+  background:blue;
+  grid-area: 5/3/7/4;
+}
+.groc_triangleblau{
+background:#fff450 ;
+grid-area:2/3/4/4;
+}
+.verd_triangleblau{
+background:#6ab670 ;
+grid-area:4/1/5/2;
+}
+.triangleblau{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url("img/blau_claret.svg");
+  background-color: #fff450;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.triangleblau p{
+  position: absolute;
+  font-size: 1rem;
+  transform: rotate(-90deg);
+  bottom: 70px;
+  left: -50px;
+
+}
+.triangleblau_2{
+  padding: 0 0 0 50%;
+  width: 100%;
+  height: 100%;
+  background-image: url("img/blau_oscur.svg");
+  background-color:#6ab670;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: content-box;
+  
+}
+/*.triangleblau img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}*/
+ </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+  <div id="dj1">
+    <p>KILO KISH (US,LIVE)</p>
+  </div>
+  <div class="groc_bg"></div>
+  <div id="dj2">
+    <p>MUJUICE (DJ-SET)</p>
+  </div>
+ <div id="groc_triangleblau"></div>
+  <div id="trangleblau">
+  </div>
+  <div id="dj3">
+    <p>KIRILL IVANOV</br>(SBPCH,DJ-SET)</p>
+  </div>
+<div id="festival">
+  <p>STRELKA</p>
+</div>
+<div id="data">
+  <p>10.06</p>
+  <P>23.00</P>
+</div>
+<div class="morada"></div>
+<div class="verd_bg"></div>
+<div class="blau_bg"></div>
+<div class="festival"></div>
+<div class="groc_triangleblau">
+  <div class="triangleblau">
+        <p>14,BLDG,5A, <br>BERSENEVSKAYA EMB.</p>
+
+  <!--img src="img/blau_claret.svg" alt=""-->
+  </div>
+</div>
+<div class="verd_triangleblau">
+  <div class="triangleblau_2">
+  <!--img src="img/blau_claret.svg" alt=""-->
+  </div>
+</div>
+</body>
+</html>
